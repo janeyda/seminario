@@ -1,0 +1,114 @@
+@import 'reset'
+
+$transparente:rgba(3, 13, 13, 0.3)
+$pad-space:20px
+$link:   rgba(245, 239, 238, 0.916) 
+html
+   height: 100vh
+body
+    background: white
+    font-size:18px 
+    
+a
+    color: $link
+header
+    background: url('../images/carros-Photoroom.jpg')
+    background-size: 1700px, cover
+    background-repeat: no-repeat
+    background-position: center
+    nav
+      display: grid
+      grid-template-columns: 240px 1fr
+      background: $transparente
+      padding: 5px $pad-space
+      border-bottom: 1px solid #cacaca
+      ul
+          display: inline-flex
+          align-items: center
+          justify-content: flex-end
+          color: $link
+        
+          li 
+             margin-right: $pad-space              
+    section
+        display: grid
+        grid-templay-columns: 1fr 300px
+        padding: 50px $pad-space
+        column-gap: 80 px   
+        blockquote
+            color: white 
+            background: $transparente 
+        form
+            padding:$pad-space
+            background: &$transparente
+            width: 30%
+            input,button
+                margin-bottom: $pad-space 
+            input
+               padding: 15px
+                width:calc(100% - 25px)
+                
+            button
+                width: 85% 
+                font-size: 2em
+                paddding:10px
+                cursor: pointer             
+            a
+                display: block
+                text-align: center
+footer
+   
+    background: gray
+    border-top:10px solid 
+    display: grid
+    padding: 10px $pad-space 30px 600px
+    grid-template-columns: 1fr 1fr 1fr
+
+@media screen and ( max-width: 500px )
+    body
+       background: rgba(18, 62, 120, 0.397)
+    header
+        background-size: 2000px, cover
+        nav
+            grid-template-columns: 1px 1fr 
+            padding: 2px  
+        section
+            grid-template-columns: 1fr 
+            blockquote
+             color: white 
+             background: $transparente 
+        form
+            padding:$pad-space  
+            button
+                width: auto 
+                font-size: 2em
+                paddding:1px
+                cursor: pointer  
+
+
+          
+    main 
+        padding: 0px 30px 30px 30px
+       
+            
+        
+    footer              
+       background: gray
+       border-top:1px solid 
+       display: grid
+       padding: 10px $pad-space 30px 30px
+       grid-template-columns: 1fr 1fr 1fr
+              
+             
+    
+@media screen and ( min-width: 500px )
+    body
+       background: white  
+    
+    
+
+
+
+
+
+     

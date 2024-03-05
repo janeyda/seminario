@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: white;
+  font-size: 18px;
+}
+
+a {
+  color: rgba(245, 239, 238, 0.916);
+}
+
+header {
+  background: url("../images/carros-Photoroom.jpg");
+  background-size: 1700px, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  background: rgba(3, 13, 13, 0.3);
+  padding: 5px 20px;
+  border-bottom: 1px solid #cacaca;
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgba(245, 239, 238, 0.916);
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header section {
+  display: grid;
+  grid-templay-columns: 1fr 300px;
+  padding: 50px 20px;
+  -moz-column-gap: 80 px;
+       column-gap: 80 px;
+}
+header section blockquote {
+  color: white;
+  background: rgba(3, 13, 13, 0.3);
+}
+header section form {
+  padding: 20px;
+  background: header section form rgba(3, 13, 13, 0.3);
+  width: 30%;
+}
+header section form input, header section form button {
+  margin-bottom: 20px;
+}
+header section form input {
+  padding: 15px;
+  padding-width: calc(100% - 25px);
+}
+header section form button {
+  width: 85%;
+  font-size: 2em;
+  paddding: 10px;
+  cursor: pointer;
+}
+header section form a {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  background: gray;
+  border-top: 10px solid;
+  display: grid;
+  padding: 10px 20px 30px 600px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background: rgba(18, 62, 120, 0.397);
+  }
+  header {
+    background-size: 2000px, cover;
+  }
+  header nav {
+    grid-template-columns: 1px 1fr;
+    padding: 2px;
+  }
+  header section {
+    grid-template-columns: 1fr;
+  }
+  header section blockquote {
+    color: white;
+    background: rgba(3, 13, 13, 0.3);
+  }
+  header form {
+    padding: 20px;
+  }
+  header form button {
+    width: auto;
+    font-size: 2em;
+    paddding: 1px;
+    cursor: pointer;
+  }
+  main {
+    padding: 0px 30px 30px 30px;
+  }
+  footer {
+    background: gray;
+    border-top: 1px solid;
+    display: grid;
+    padding: 10px 20px 30px 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 500px) {
+  body {
+    background: white;
+  }
+}/*# sourceMappingURL=style.css.map */
